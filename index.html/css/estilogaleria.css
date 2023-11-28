@@ -1,0 +1,32 @@
+body
+{
+    font-family:'Times New Roman', Times, serif;
+ 
+}
+.Contenedor{
+    width: 950px;
+    padding: 0 15px 0 15px;
+}
+.imagen
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecera
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(50, 215, 241);
+    font-family:cursive
+}
+.cabecera
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(50, 215, 241);
+    font-family:cursive
+}
+
