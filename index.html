@@ -13,6 +13,39 @@
     <link href="css/estilo.css" rel="stylesheet" type="text/css"> 
 </head> 
 <body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        import {getDatabses, ref, push, onValue, remove} from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCCbimy54rGR72rT3FT88v-2O_3CKAibwg",
+          authDomain: "prueba-bj.firebaseapp.com",
+          databaseURL: "https://prueba-bj-default-rtdb.firebaseio.com",
+          projectId: "prueba-bj",
+          storageBucket: "prueba-bj.appspot.com",
+          messagingSenderId: "135441637281",
+          appId: "1:135441637281:web:f435c09593b8edcd0c75e0"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabses(app);
+
+        window.crearRegsitro = function (){
+            const nombre = document.getElementById("nombre").value;
+            const edad = document.getElementById("edad").value;
+            
+            console.log(nombre, edad);
+
+        }
+
+
+        }
+      </script>
     <header class="cabecera">
         <div class="img-center">
             <a href="index.html" title="Pagina de inicio"> 
